@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Fácil - Gestão Inteligente para Profissionais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { background: #0f1115; color: white; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-teal-gradient { background: linear-gradient(135deg, #1e3a8a, #0891b2); }
+        .card-blur { background: rgba(30, 30, 30, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body>
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <h1 class="text-xl font-800 italic uppercase tracking-tighter">Agenda <span class="text-cyan-400">Fácil</span></h1>
+        <a href="#demo" class="text-xs font-bold border border-cyan-400/30 px-4 py-2 rounded-full hover:bg-cyan-400 hover:text-black transition">VER DEMONSTRAÇÃO</a>
+    </nav>
+
+    <header class="py-20 px-6 text-center max-w-4xl mx-auto">
+        <span class="text-cyan-400 text-[10px] font-bold uppercase tracking-[0.3em] mb-4 block">SaaS para Autônomos e Negócios</span>
+        <h2 class="text-5xl md:text-7xl font-800 mb-6 leading-tight">Pare de perder tempo com o <span class="gradient-text">WhatsApp.</span></h2>
+        <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">Uma plataforma completa de agendamento online, gestão de faturamento e controle de clientes em tempo real.</p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <button class="bg-teal-gradient px-8 py-4 rounded-2xl font-bold text-black hover:scale-105 transition shadow-[0_0_30px_rgba(34,211,238,0.3)]">COMEÇAR AGORA</button>
+            <button class="bg-white/5 border border-white/10 px-8 py-4 rounded-2xl font-bold hover:bg-white/10 transition">SABER MAIS</button>
+        </div>
+    </header>
+
+    <section class="py-20 bg-black/30">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div class="card-blur p-8 rounded-3xl">
+                <div class="text-3xl mb-4">⚡</div>
+                <h3 class="font-bold text-xl mb-2">Agendamento 24/7</h3>
+                <p class="text-gray-500 text-sm">Seu cliente agenda o horário sozinho pelo link exclusivo, mesmo enquanto você dorme ou trabalha.</p>
+            </div>
+            <div class="card-blur p-8 rounded-3xl">
+                <div class="text-3xl mb-4">💰</div>
+                <h3 class="font-bold text-xl mb-2">Faturamento Real-Time</h3>
+                <p class="text-gray-500 text-sm">Saiba exatamente quanto ganhou no dia e o que ainda tem para receber com dashboards automáticos.</p>
+            </div>
+            <div class="card-blur p-8 rounded-3xl">
+                <div class="text-3xl mb-4">🔔</div>
+                <h3 class="font-bold text-xl mb-2">Notificações "Plim!"</h3>
+                <p class="text-gray-500 text-sm">Receba alertas sonoros e notificações instantâneas assim que um novo cliente marcar um horário.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <h2 class="text-4xl font-bold mb-6">Tecnologia de <br><span class="text-cyan-400">Ponta a Ponta.</span></h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 text-gray-300">
+                        <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span> Banco de dados NoSQL (Firebase)
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-300">
+                        <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span> Autenticação Segura por Usuário
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-300">
+                        <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span> Interface Mobile-First Ultrarrápida
+                    </li>
+                    <li class="flex items-center gap-3 text-gray-300">
+                        <span class="w-1.5 h-1.5 bg-cyan-400 rounded-full"></span> Gestão de Licença e Pagamentos
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 relative">
+                <div class="aspect-video bg-gradient-to-br from-cyan-900/50 to-blue-900/50 rounded-3xl border border-white/10 flex items-center justify-center relative overflow-hidden group">
+                    <!-- <p class="text-cyan-400 font-bold italic group-hover:scale-110 transition cursor-default">PREVISUALIZAÇÃO DO APP</p> -->
+                     <img src="img/preview.png" class="w-full h-full object-cover rounded-3xl" alt="Preview do App">
+                    <div class="absolute inset-0 bg-cyan-400/5 opacity-0 group-hover:opacity-100 transition"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 text-center bg-teal-gradient mx-6 rounded-[3rem] my-20">
+        <h2 class="text-3xl md:text-5xl font-bold text-black mb-8 px-4">Pronto para digitalizar seu negócio?</h2>
+        <button class="bg-black text-white px-10 py-5 rounded-2xl font-bold uppercase tracking-widest hover:bg-gray-900 transition shadow-2xl">SOLICITAR DEMONSTRAÇÃO</button>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-[10px] uppercase tracking-widest">
+        &copy; 2026 Eli Junior Santo de Jesus (Elli) - Desenvolvedor Fullstack
+    </footer>
+
+</body>
+</html>
